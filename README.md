@@ -7,10 +7,10 @@ The following project contains three different examples of navbars for a coffee 
 * HTML, CSS, JavaScript
 
 ## Design
-<img src="frame1.png"
+<img src="Frame1.png"
      alt="Light design image"/>
 
-<img src="frame2.png"
+<img src="Frame2.png"
      alt="Light design image"/>
 
 ## Resources
