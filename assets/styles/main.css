@@ -1,0 +1,171 @@
+.navbar{
+    height: var(--nav-heigh);
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/*--------- LOGO ---------*/
+
+.navbar__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar__logo span{
+    color: var(--secondary-color);
+    font-size: var(--title-size);
+    text-shadow: 1px 1px 2px #7777, 2px 2px 4px #7777;
+}
+
+
+/*--------- LINKS ---------*/
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.menu__item{
+    display: inline-block;
+    padding: 0px 20px;
+    
+}
+
+
+.menu__link{
+    font-size: var(--text-size);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color .5s ease-out;
+}
+
+.menu__link img{
+    position: absolute;
+    margin-top: 25px;
+    width: 25px;
+    animation: show 2s;
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.menu__link:hover{
+    color: var(--secondary-color);
+}
+
+
+/*--------- ICONS ---------*/
+.navbar__icons i{
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+    padding: 0px 5px;
+    cursor: pointer;
+   
+}
+
+.navbar__icons span{
+    padding: 8px .5px 2px .5px;
+    background-color: #77777765;
+    color: 777;
+    margin-right: 1.5px;
+}
+
+/*--------- JS ACTIONS ---------*/
+.active{
+    color: var(--secondary-color);
+}
+
+
+
+/*--------- STYLES FOR NAVBAR II---------*/
+.navbar2__logo{
+    padding: 0 50px;
+}
+
+/*--------- STYLES FOR NAVBAR III---------*/
+.navbar3{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 170px;
+}
+
+.navbar__section1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 40px 15px 40px;
+    margin-top: 0;
+}
+
+.navbar__section1 .navbar__icons i{
+    font-size: 2rem;
+}
+
+.navbar__section2{
+    padding: 10px 0px 0px 0px;
+}
+
+.navbar__division{
+    padding: .1px 0;
+    width: 100%;
+    background-color: #7777;
+}
+
+
+/*--------- LIGHT AND DARK MODE---------*/
+
+.light, .dark{
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.light{
+    color: #FFF;
+}
+
+.hide{
+    display: none;
+}
+
+/*--------- RESPONSIVE 900 ---------*/
+@media screen and (max-width: 900px){
+    .navbar2, .navbar3{
+        display: none;
+    }
+
+    .navbar{
+        width: 250px;
+        height: 600px;
+        flex-direction: column;
+        
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-between;
+    }
+
+    .menu__item{
+        padding: 20px 0px;
+    }
+
+   
+}
